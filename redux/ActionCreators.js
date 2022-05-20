@@ -121,7 +121,7 @@ export const fetchPartners = () => dispatch => {
             },
             error => {
                 const errMess = new Error(error.message);
-                throw errMess;
+                throw errMess; 
             })
         .then(response => response.json())
         .then(partners => dispatch(addPartners(partners)))
