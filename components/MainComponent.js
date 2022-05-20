@@ -210,7 +210,6 @@ class Main extends Component {
         this.props.fetchPromotions();
         this.props.fetchPartners();
     }
+}
 
-    
-   
-export default connect(mapStateToProps)(Home);
+    export default connect(mapStateToProps)(Home);
