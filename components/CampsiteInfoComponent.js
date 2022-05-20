@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Text, View, ScrollView, FlatList } from 'react-native';
 import { Card, Icon } from 'react-native-elements';
 import { connect } from 'react-redux';
-import { baseUrl } from '../shared/baseUrl';
+import { baseURL } from '../shared/baseURL';
 import { postFavorite } from '../redux/ActionCreators';
 
 const mapStateToProps = state => {
@@ -26,7 +26,7 @@ function RenderCampsite(props) {
         return (
             <Card
                 featuredTitle={campsite.name}
-                image={{uri: baseUrl + campsite.image}}>
+                image={{uri: baseURL + campsite.image}}>
                 <Text style={{margin: 10}}>
                     {campsite.description}
                 </Text>

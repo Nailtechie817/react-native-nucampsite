@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, FlatList, Text } from 'react-native';
 import { Tile } from 'react-native-elements';
 import { connect } from 'react-redux';
-import { baseUrl } from '../shared/baseUrl';
+import { baseURL } from '../shared/baseURL';
 import Loading from './LoadingComponent';
 
 const mapStateToProps = state => {
@@ -26,7 +26,7 @@ class Directory extends Component {
                     caption={item.description}
                     featured
                     onPress={() => navigate('CampsiteInfo', { campsiteId: item.id })}
-                    imageSrc={{uri: baseUrl + item.image}}
+                    imageSrc={{uri: baseURL + item.image}}
                 />
             );
         };

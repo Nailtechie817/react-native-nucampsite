@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { ScrollView, Text, FlatList } from 'react-native';
 import { Card, ListItem } from 'react-native-elements';
 import { connect } from 'react-redux';
-import { baseUrl } from '../shared/baseUrl';
+import { baseURL } from '../shared/baseURL';
 import Loading from './LoadingComponent';
 
 const mapStateToProps = state => {
@@ -34,7 +34,7 @@ const mapStateToProps = state => {
             <ListItem
                 title={item.name}
                 subtitle={item.description}
-                leftAvatar={{source: {uri: baseUrl + item.image}}}
+                leftAvatar={{source: {uri: baseURL + item.image}}}
             />
         );
     };
