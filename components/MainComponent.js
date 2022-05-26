@@ -228,7 +228,8 @@ const MainNavigator = createDrawerNavigator(
             )
         }
     },
-},
+
+    
     Favorites: {
     screen: FavoritesNavigator,
     navigationOptions: {
