@@ -7,7 +7,7 @@ import { deleteFavorite } from '../redux/ActionCreators';
 import { connect } from 'react-redux';
 import { Loading } from './LoadingComponent';
 import * as Animatable from 'react-native-animatable';
-import { baseUrl } from '../shared/baseUrl';
+import { baseURL } from '../shared/baseURL';
 
 const mapStateToProps = state => {
     return {
@@ -63,7 +63,7 @@ class Favorites extends Component {
                         <ListItem
                             title={item.name}
                             subtitle={item.description}
-                            leftAvatar={{source: {uri: baseUrl + item.image}}}
+                            leftAvatar={{source: {uri: baseURL + item.image}}}
                             onPress={() => navigate('CampsiteInfo', {campsiteId: item.id})}
                         />
                     </View>
